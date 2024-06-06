@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6305751172:AAG3f0lLXE-ivB1r3xP0VSvUfR0nKfURYfM",
-             api_id= 29759544,
-             api_hash= "97030a871720998c6efc5debcce67aa4")
+             bot_token= "7270657201:AAEVXRfc_VhDFE9IjYDIcW34ZTqYcU_d4OQ",
+             api_id= 21537501,
+             api_hash= "02d8ef0eae2926ec4fd0cbff05ec0737")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /tuktuk")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /boss")
 
 
 @bot.on_message(filters.command("stop"))
